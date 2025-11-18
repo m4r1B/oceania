@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --texto-contraste: #0063A1;
+    --fundo-menu: linear-gradient(90deg, #095089 0%, #C2E2FD 100%);
+    --losangolo: linear-gradient(to bottom right, #3E7CAF 0%, #1A3449 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #3E7CAF 0%, #1A3449 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #3E7CAF 0%, #1A3449 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, #3E7CAF 0%, #1A3449 50%) top right / 50% 50% no-repeat;
+    --botao-principal: #0063A1;
+    --botao-principal-houver: #489FD5;
+    --botão-sub-menu: #FFFFFF;
+    --fundo: #D0E8FF;
+    --sub-menu: #1A4B72;
+    --sombra-texto: 0 4px 4px rgba(0, 0, 0, 0.25); 
+    --sombra-button: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    --brilho-texto: 0 0 6px #FFF;
+    --brilho-button: 0 0 7px 0 #FFF;
+    --texto: #133A59;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--fundo);
+    max-width: auto;
+    max-height: auto;
+    align-items: center;
+}
+
+.menu {
+    background: var(--fundo-menu);
+    padding: 1.5rem;
+    width: auto;
+    position: flex;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav ul {
+    list-style: none;
+    display:flex;
+    gap: 220px;
+}
+
+.menu button {
+    /*fonte*/
+    color: var(--botão-sub-menu);
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: var(--sombra-texto);
+    /*fundo*/
+    background: var(--botao-principal);
+    padding: 7px 28px;
+    border-radius: 20px;
+    box-shadow: var(--sombra-button) ;
+    border-style: none;
+    /*hover*/
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.menu .origin button{
+    background: var(--botao-principal-houver);
+}
+
+.menu button:hover {
+    text-shadow: var(--brilho-texto);
+    padding: 8px 32px;
+}
+
+.sub_menu {
+    background: var(--sub-menu);
+    padding: 0.7rem;
+    position: flex;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.sub_menu button {
+    /*fonte*/
+    color: var(--sub-menu);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-shadow: var(--sombra-texto);
+    line-height: normal;
+    /*fundo*/
+    background-color:   var(--botão-sub-menu);
+    border-radius: 15px;
+    box-shadow: var(--sombra-button);
+    border-style: none;
+    width: 165px; 
+    height: 46px;
+    /*hover*/
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+
+.sub_menu button:hover {
+    text-shadow: 0 0 3px #000;
+    width: 170px; 
+    height: 47.39px;
+}
+
+.sub_menu nav ul {
+    list-style: none;
+    display:flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h3 {
+    font-size: 22px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+    color: var(--texto);
+}
+
+.content {
+    margin: 50px 70px;
+}
+
+div .title {
+    background:var(--losangolo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img img {
+    border-radius: 50px;
+    margin: 3rem;
+}
+
+/*RODAPÉ*/
+footer {
+    width: auto;
+    color: var(--fundo);
+}
+
+/*Organização e fundo do rodapé*/
+#footer_content {
+    background: url(imagens/footer/fundo\ do\ rodapé.jpeg);
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 90px;
+    padding: 3rem  7rem;
+    
+}
+
+#footer_title {
+    justify-items: center;
+    margin-top: 25px;
+}
+
+/*Siga nos*/
+#footer_social_media h3 {
+    margin-bottom: 0.1rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/*icones*/
+#footer_social_media .footer-link i {
+    font-size: 30px;
+} 
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_social_media .footer-link { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 53px;
+    width: 53px;
+    color: var(--fundo);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link:hover {
+    box-shadow: 0 0 7px 0 #FFF;
+    width: 57px;
+    height: 57px;
+}
+
+#instagram {
+    background: var(--losangolo);
+}
+
+#facebook {
+    background: var(--losangolo);
+}
+
+#email {
+    background: var(--losangolo);
+}
+
+#titlerodape {
+    padding-bottom: 1.5rem;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    list-style: none;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    text-decoration: none;
+    list-style-type:circle;
+}
+
+.footer_list .footer-link {
+    color: var(--botão-sub-menu); 
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.footer_list .footer-link:hover {
+    text-shadow: 0 0 6px #FFF;
+}
+
+#footer_closed_captioning  {
+    display: flex;
+    justify-content: center;
+    background-color: var(--sub-menu);
+    gap: 900px; 
+}
+
+#politica_privacidade {
+    color: var(--fundo);
+}
+
+.button_sobre_nós1 button{
+    width: 304px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 10px;
+/* sombra */
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.25);
+    background:  var(--fundo-menu);
+    border-style: none;
+    color: #FFF;
+    text-align: center;
+/* botão menu e botão houver menu(computador) */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 200px;
+}
+.button_sobre_nós2 button{
+    width: 346px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.25);
+    background: var(--fundo-menu);
+    border-style: none;
+    color: #FFF;
+    text-align: center;
+/* botão menu e botão houver menu(computador) */
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/*RODAPÉ*/
