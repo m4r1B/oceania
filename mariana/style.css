@@ -245,7 +245,7 @@ body {
     }
 
     /*sobre nós*/
-
+/*---------------------------------------------------------------------------------------------------------*/
 .button_sobre_nós1 button{
     width: 304px;
     height: 44px;
@@ -277,8 +277,6 @@ body {
     top: -190px;
 }
 /*fim seta*/
-.primeira_seta{
-}
 .button_sobre_nós1 button:hover{
     width: 380px;
     height: 80px;
@@ -308,7 +306,35 @@ body {
     height: 95px;
     transition: all 0.3s;
 }
-
+.escrito1{
+    display:block;
+    margin-left: 840px;
+    margin-top: -130px;
+    width: 307px;
+    height: 93px;
+    color: #3E7CAF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.escrito2{
+    display:block;
+    margin-left: 840px;
+    margin-top: -235px;
+    width: 307px;
+    height: 93px;
+    color: #3E7CAF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.titulo_sobre_nos{
+    text-align: center;
+    margin-top: 50px;
+}
+/*---------------------------------------------------------------------------------------------------------*/
 
 /*RODAPÉ*/
     footer {
